@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velocity Forze — AI-led technology for the HoReCa industry." />
+  <title>Velocity Forze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="opening" id="opening" aria-hidden="false">
+    <div class="opening-noise"></div>
+    <div class="opening-mark" aria-hidden="true"></div>
+  </div>
+
+  <div class="logo-dock" id="logoDock">
+    <button class="brand-button" id="brandButton" aria-label="Return to opening screen">
+      <img src="assets/velocity-forze-logo-blue.png" alt="Velocity Forze" />
+    </button>
+  </div>
+
+  <header class="site-nav" id="siteNav">
+    <nav aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#us">Us</a>
+      <a href="#problem">Problem</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home is intentionally empty beside the logo. -->
+    <section class="home" id="home" aria-label="Home"></section>
+
+    <section class="section about" id="about">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="network" aria-hidden="true">
+        <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+        <span class="node n4"></span><span class="node n5"></span><span class="node n6"></span>
+        <i class="line l1"></i><i class="line l2"></i><i class="line l3"></i>
+        <i class="line l4"></i><i class="line l5"></i><i class="line l6"></i>
+      </div>
+      <div class="content content-center reveal">
+        <p class="eyebrow">About</p>
+        <h1>We’re building<span>…</span></h1>
+        <p class="lead">We are a stealth-mode startup working on a range of solutions for the HoReCa industry.</p>
+        <p class="sublead">AI-led technology, shaped around the realities of hospitality.</p>
+      </div>
+    </section>
+
+    <section class="section us" id="us">
+      <div class="content content-center reveal">
+        <p class="eyebrow">Us</p>
+        <h2>The people behind<br>Velocity Forze.</h2>
+        <p class="sublead section-intro">A small team building deliberately, with a little chaos and a lot of curiosity.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/krishnamurthy-jadhav.jpg" alt="Krishnamurthy Jadhav"></div>
+          <div class="person-meta"><span>01 · Co-Founder</span><h3>Krishnamurthy Jadhav</h3><p>Parents said engineer. Somehow that became a startup.</p><a href="mailto:krishna@velocityforze.com">krishna@velocityforze.com</a></div>
+        </article>
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/samuel-alves.jpg" alt="Samuel Alves"></div>
+          <div class="person-meta"><span>02 · Co-Founder</span><h3>Samuel Alves</h3><p>Big ideas. Bigger curiosity. Occasionally too many browser tabs.</p><a href="mailto:samuel@velocityforze.com">Samuel@velocityforze.com</a></div>
+        </article>
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/nilesh-patil.jpg" alt="Nilesh Patil"></div>
+          <div class="person-meta"><span>03 · Co-Founder</span><h3>Nilesh Patil</h3><p>Two co-founders weren’t enough. Someone had to bring extra chaos.</p><a href="mailto:nilesh@velocityforze.com">Nilesh@velocityforze.com</a></div>
+        </article>
+        <article class="person-card mentor reveal">
+          <div class="portrait"><img src="assets/team/rajas-joes.jpg" alt="Rajas Joes"></div>
+          <div class="person-meta"><span>04 · Mentor &amp; Advisor</span><h3>Rajas Joes</h3><p>Helped bring venture capital to India before pitch decks, hoodies, and “disruption” became a lifestyle.</p><a href="mailto:info@velocityforze.com">info@velocityforze.com</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <video class="problem-video" id="problemVideo" autoplay muted loop playsinline preload="metadata" poster="assets/video/problem-poster.jpg" aria-hidden="true">
+        <source src="assets/video/problem-ho-reca.mp4" type="video/mp4">
+      </video>
+      <div class="problem-vignette"></div>
+      <div class="problem-topline"><span>HoReCa / The problem space</span><span>Hotels · Restaurants · Cafés · Catering</span></div>
+      <div class="problem-center reveal">
+        <p class="eyebrow">Problem</p>
+        <h2>What’s getting in the way?</h2>
+        <p>Tell us what is making your operation harder — menus, POS, digital signage, check-in, customer experience, or something else.</p>
+        <form id="problemForm" class="problem-form">
+          <label class="sr-only" for="problemInput">What is your problem?</label>
+          <input id="problemInput" name="problem" type="text" autocomplete="off" placeholder="What is your problem?" required />
+          <button type="submit" aria-label="Send problem">↗</button>
+        </form>
+        <div class="problem-response" id="problemResponse" aria-live="polite"></div>
+      </div>
+      <div class="problem-foot"><span>01 / OPERATIONS</span><span>02 / EXPERIENCE</span><span>03 / SYSTEMS</span></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-grid reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build<br>what’s next.</h2>
+          <p class="contact-intro">Tell us who you are, what problem you are facing, and what you want to solve.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Problem</span>
+              <input name="problem" type="text" placeholder="What are you trying to solve?" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell us a little more..." required></textarea>
+          </label>
+          <div class="contact-submit-row">
+            <button type="submit">Send message <span>↗</span></button>
+            <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

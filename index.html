@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velocity Forze — AI-led technology for the HoReCa industry." />
+  <title>Velocity Forze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="opening" id="opening" aria-hidden="false">
+    <div class="opening-noise"></div>
+    <div class="opening-mark" aria-hidden="true"></div>
+  </div>
+
+  <div class="logo-dock" id="logoDock">
+    <button class="brand-button" id="brandButton" aria-label="Return to opening screen">
+      <img src="assets/velocity-forze-logo-blue.png" alt="Velocity Forze" />
+    </button>
+  </div>
+
+  <header class="site-nav" id="siteNav">
+    <nav aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#us">Us</a>
+      <a href="#problem">Problem</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home is intentionally empty beside the logo. -->
+    <section class="home" id="home" aria-label="Home"></section>
+
+    <section class="section about" id="about">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="network" aria-hidden="true">
+        <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+        <span class="node n4"></span><span class="node n5"></span><span class="node n6"></span>
+        <i class="line l1"></i><i class="line l2"></i><i class="line l3"></i>
+        <i class="line l4"></i><i class="line l5"></i><i class="line l6"></i>
+      </div>
+      <div class="content content-center reveal">
+        <h1>We’re building<span>…</span></h1>
+        <p class="lead">stealth-mode startup working on a range of AI-led technology solutions for the HoReCa industry.</p>
+      </div>
+    </section>
+
+    <section class="section us" id="us">
+      <div class="content content-center reveal">
+        <h2>The people behind<br>Velocity Forze...</h2>
+        <p class="sublead section-intro">A small team building deliberately, with a little chaos and a lot of curiosity.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/krishnamurthy-jadhav.jpg" alt="Krishnamurthy Jadhav"></div>
+          <div class="person-meta"><span>01 · Co-Founder</span><h3>Krishnamurthy Jadhav</h3><p>Parents said engineer. Somehow that became a startup.</p><a href="mailto:krishna@velocityforze.com">krishna@velocityforze.com</a></div>
+        </article>
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/samuel-alves.jpg" alt="Samuel Alves"></div>
+          <div class="person-meta"><span>02 · Co-Founder</span><h3>Samuel Alves</h3><p>Big ideas. Bigger curiosity. Occasionally too many browser tabs.</p><a href="mailto:samuel@velocityforze.com">samuel@velocityforze.com</a></div>
+        </article>
+        <article class="person-card reveal">
+          <div class="portrait"><img src="assets/team/nilesh-patil.jpg" alt="Nilesh Patil"></div>
+          <div class="person-meta"><span>03 · Co-Founder</span><h3>Nilesh Patil</h3><p>Two co-founders weren’t enough. Someone had to bring extra chaos.</p><a href="mailto:nilesh@velocityforze.com">nilesh@velocityforze.com</a></div>
+        </article>
+        <article class="person-card mentor reveal">
+          <div class="portrait"><img src="assets/team/rajas-joes.jpg" alt="Rajosh Jog"></div>
+          <div class="person-meta"><span>04 · Mentor &amp; Advisor</span><h3>Rajosh Jog</h3><p>Helped bring venture capital to India VC Veteran before pitch decks, hoodies, and “disruption” became a lifestyle.</p><a href="mailto:info@velocityforze.com">info@velocityforze.com</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <video class="problem-video" id="problemVideo" autoplay muted loop playsinline preload="metadata" poster="assets/video/problem-poster.jpg" aria-hidden="true">
+        <source src="assets/video/problem-ho-reca.mp4" type="video/mp4">
+      </video>
+      <div class="problem-vignette"></div>
+      <div class="problem-center reveal">
+        <h2>What is today’s problem?</h2>
+        <p class="problem-byline">Tell us what is making your operation harder — menus, POS, digital signage, check-in, customer experience, or something else...</p>
+        <form id="problemForm" class="problem-form">
+          <label class="sr-only" for="problemInput">How can we help you?</label>
+          <span class="typing-placeholder" id="problemPromptText" aria-hidden="true">Tell us first<span class="typing-caret"></span></span>
+          <input id="problemInput" name="problem" type="text" autocomplete="off" required />
+          <button type="submit" aria-label="Send problem">↗</button>
+        </form>
+        <div class="problem-response" id="problemResponse" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-grid reveal">
+        <div class="map-card" aria-label="Fattora Foods location on Google Maps">
+          <iframe
+            title="Fattora Foods — Verna Industrial Estate, Goa"
+            src="https://www.google.com/maps?q=Fattora%20Foods%2C%209W8H%2BR5P%2C%20L-90-2-E%2C%20Verna%20Industrial%20Estate%2C%20Verna%2C%20Nagve%2C%20Goa%20403722&output=embed"
+            loading="eager"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            title="Interactive Google Map showing Fattora Foods">
+          </iframe>
+          <a class="map-overlay-link" href="https://maps.app.goo.gl/F9hnChiTCSxihVnQ9" target="_blank" rel="noopener noreferrer">Open Fattora Foods in Google Maps ↗</a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Problem</span>
+              <input name="problem" type="text" placeholder="What are you trying to solve?" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell us a little more..." required></textarea>
+          </label>
+          <div class="contact-submit-row">
+            <button type="submit">Send message <span>↗</span></button>
+            <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
